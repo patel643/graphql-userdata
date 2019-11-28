@@ -1,0 +1,42 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run serve",
+    "dev": "nodemon --exec ts-node src/server.ts",
+    "serve": "node dist/server.js",
+    "build": "tsc",
+    "test": "mocha --timeout 25000 -r ts-node/register tests/test.ts"
+  },
+  "dependencies": {
+    "@types/mongoose": "^5.3.20",
+    "apollo-server": "^2.9.12",
+    "apollo-server-express": "^2.9.12",
+    "dat": "^13.13.1",
+    "docker": "^1.0.0",
+    "docker-compose": "^0.23.1",
+    "express": "^4.16.4",
+    "graphql": "^14.5.8",
+    "mongo-seed": "^0.6.0",
+    "mongoose": "^5.4.17",
+    "nodemon": "^1.18.10",
+    "path": "^0.12.7",
+    "sinon": "^7.5.0",
+    "tslint": "^5.13.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.5",
+    "@types/graphql": "^14.5.0",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "ts-node": "^8.5.3",
+    "typescript": "^3.7.2",
+    "typings": "^2.1.1"
+  },
+  "author": "Nidhi Patel",
+  "license": "ISC"
+}
