@@ -16,17 +16,26 @@ This repo conatins different GraphQL queries and mutation examples created using
 
 ## Getting Started
 
-For precise starting instructions (especially on first installation), check "gettingStarted.docx"
+For precise starting instructions (especially on first installation), check "GettingStarted.pdf"
 ```
 docker-compose up -d
+```
+```
 npm install
+```
+```
 npm run dev
+```
+```
 Go to localhost:8000/graphql
 ```
 
 ## Query and Mutations
 
-```
-Check "QueriesAndMutations.docx" for sample examples and outputs
-```
+Check "QueriesAndMutations.pdf" for sample examples and outputs
 
+## Testing
+
+```
+npm test
+```
