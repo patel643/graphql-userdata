@@ -154,6 +154,7 @@ const resolvers = {
                 console.log("Leaf node for user in People DB with id: ", args.id, " is at level: ", numLevel);
                 return output;
             }
+
             //create all other levels until you reach root
             do {
                 hier = await People.find({ _id: user[0].managerId }).lean(); 

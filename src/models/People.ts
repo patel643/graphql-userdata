@@ -1,6 +1,6 @@
 import mongoose, { Schema} from "mongoose";
-import { DeptSchema, Departments } from "./Departments";
 
+//creating People Schema for Mongoose model
 var PeopleSchema = new mongoose.Schema({
 	_id: String!,
     firstName: String,
@@ -11,7 +11,8 @@ var PeopleSchema = new mongoose.Schema({
 },
     {
         versionKey: false // set to false then it wont create in mongodb
-    });
+});
 
+//create people model
 var People = mongoose.model("people", PeopleSchema);
 export { People };
